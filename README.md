@@ -22,4 +22,4 @@
   element. This results in a traversal of n elements n times, for a runtime of
   n^2. 
 
-![Alt text]
+![Alt text](https://github.com/jacruse/solo/blob/master/quicksort.png?raw=true"Graphs")
