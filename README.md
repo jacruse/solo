@@ -21,4 +21,5 @@
   each iteration. This will partition the array into an array smaller by one
   element. This results in a traversal of n elements n times, for a runtime of
   n^2. 
-  
+
+![Alt text]
