@@ -86,15 +86,15 @@ public class QuickSort
     
     public static void qsortH( int[] arr, int left, int right) {
 	if (left == right || left > right) {
-	    System.out.println("end");
+	    //System.out.println("end");
 	    return;
 	}
 
 	int val = groupSort(arr, left, right, (left + right) / 2);
 
-       	System.out.println("sorting upper section");
+       	//System.out.println("sorting upper section");
 	qsortH( arr, val + 1, right);
-	System.out.println("sorting lower section");
+	//System.out.println("sorting lower section");
 	qsortH( arr, left, val - 1);
     }
 
@@ -106,13 +106,13 @@ public class QuickSort
 	//v = arr[pvtPos]
 	int v = arr[pvtPos];
 	
-	printArr(arr);
+	//printArr(arr);
 
 	//swap arr[pvtPos], arr[right]
 	arr[pvtPos] = arr[right];
 	arr[right] = v;
 	
-	printArr(arr);
+	//printArr(arr);
 	
 	
 	//s = left
@@ -134,7 +134,7 @@ public class QuickSort
 		s++;
 	    }
 	    
-	    printArr(arr);
+	    //printArr(arr);
 
 	}
 	//swap arr[right], arr[s]
@@ -142,7 +142,7 @@ public class QuickSort
 	arr[s] = arr[right];
 	arr[right] = x;
 
-	printArr(arr);
+	//printArr(arr);
 	
 	//return s
 	return s;
@@ -152,17 +152,17 @@ public class QuickSort
 	int val = groupSort(arr, left, right, (left + right) / 2);
 
 	if (val == y - 1 || left == right) {
-	    System.out.println("found");
+	    //System.out.println("found");
 	    return arr[val];
 	}
 
 	else if (val > y - 1) {
-	    System.out.println("too high");
+	    //System.out.println("too high");
 	    return ySmallestValH( arr, left, val - 1, y );
 	}
 
 	else {
-	    System.out.println("too low");
+	    //System.out.println("too low");
 	    return ySmallestValH( arr, val + 1, right, arr.length - val - 1 + y );
 	}
     }
@@ -178,6 +178,7 @@ public class QuickSort
     public static void main( String[] args ) 
     {
 
+	/*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 
 	//get-it-up-and-running, static test case:
 	int [] arr1 = {7,1,5,12,3};
 	System.out.println("\narr1 init'd to: " );
@@ -202,8 +203,8 @@ public class QuickSort
 	qsort( arrN );
 	System.out.println("arrN after sort: " );
 	printArr(arrN);
-	/*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+	/*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 
 
 
 
@@ -232,7 +233,6 @@ public class QuickSort
 	qsort( arrMatey );
 	System.out.println("arrMatey after sort: " );
 	printArr(arrMatey);
-	/*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
     }//end main
