@@ -29,14 +29,11 @@ Lab01 -- What Does the Data Say? And how?
 
   Mean execution times for dataset of size n:
   Batch size: 1000 <# of times each dataset size was run>
-  n=1       time:
-  n=10      time:
-  n=100     time:
+  n=1       time: 68.138
+  n=10      time: 777.777
+  n=100     time: 5515.547
   ...
-  n=<huge>  time:
-
-  ANALYSIS:
-
+  n=<huge>  time: nlog(n)
   ======================================*/
 
 
